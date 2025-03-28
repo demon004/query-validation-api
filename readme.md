@@ -22,7 +22,7 @@ npm install
 node index.js
 
 API Usage
-1. Validate SQL Query
+# 1. Validate SQL Query
 Endpoint: POST /validate
 Request:
 {
@@ -41,7 +41,7 @@ curl -X POST "http://localhost:3000/validate" -H "Content-Type: application/json
 cURL Command for Deployed API:
 curl -X POST "https://query-validation-api-3.onrender.com/validate" -H "Content-Type: application/json" -H "x-api-key: 123" -d "{\"query\": \"SELECT * FROM sales\"}"
 
-2. Explain SQL Query
+# 2. Explain SQL Query
 Endpoint: POST /explain
 Request:
 {
@@ -57,7 +57,7 @@ Response:
 cURL Command:
 curl -X POST "http://localhost:3000/explain" -H "Content-Type: application/json" -H "x-api-key: 123" -d '{"query": "SELECT * FROM sales"}'
 
-3. Process Natural Language Query
+# 3. Process Natural Language Query
 Endpoint: POST /query
 Request:
 {
